@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acelera Mídia - Proposta Digital</title>
+    <meta name="description" content="Transforme a presença digital da sua marca com a Acelera Mídia. Design futurista e alta performance." />
+    
+    <!-- Fonts: Manrope for geometric/modern feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration for Neon Agency -->
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Manrope', 'sans-serif'],
+              heading: ['Manrope', 'sans-serif'],
+            },
+            colors: {
+              neon: {
+                pink: '#C43A75',
+                magenta: '#8A2F63',
+                light: '#E36BA0',
+                purple: '#A45C8A',
+                grey: '#CDB6BF',
+                graphite: '#4B4B4B',
+              },
+              dark: {
+                bg: '#050505', // Deep Black
+                surface: '#0f0f0f',
+                card: '#121212',
+                border: '#2a2a2a'
+              }
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+              'hero-pattern': "url('https://grainy-gradients.vercel.app/noise.svg')", // Texture
+            },
+            boxShadow: {
+              'neon': '0 0 20px rgba(196, 58, 117, 0.5), 0 0 40px rgba(138, 47, 99, 0.3)',
+              'neon-hover': '0 0 30px rgba(196, 58, 117, 0.8), 0 0 60px rgba(138, 47, 99, 0.5)',
+              'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'glow': 'glow 3s ease-in-out infinite alternate',
+              'marquee': 'marquee 40s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              glow: {
+                'from': { textShadow: '0 0 10px #C43A75, 0 0 20px #8A2F63' },
+                'to': { textShadow: '0 0 20px #E36BA0, 0 0 30px #C43A75' },
+              },
+              marquee: {
+                '0%': { transform: 'translateX(100%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      /* Smooth scrolling */
+      html {
+        scroll-behavior: smooth;
+        background-color: #050505;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #8A2F63;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #C43A75;
+      }
+      
+      .text-glow {
+        text-shadow: 0 0 20px rgba(196, 58, 117, 0.5);
+      }
+      
+      .glass-panel {
+        background: rgba(18, 18, 18, 0.6);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-dark-bg text-gray-200 antialiased selection:bg-neon-pink selection:text-white overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>
