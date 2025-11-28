@@ -15,6 +15,7 @@ import {
 import { Button } from './components/Button';
 import { Section } from './components/Section';
 import { PLANS, COMPARISON_DATA, LINKS } from './constants';
+import { AlineAssistant } from './components/AlineAssistant';
 
 const App: React.FC = () => {
   return (
@@ -473,6 +474,9 @@ const App: React.FC = () => {
             </span>
         </div>
       </a>
+
+      {/* Voice Assistant */}
+      <AlineAssistant />
 
     </div>
   );
