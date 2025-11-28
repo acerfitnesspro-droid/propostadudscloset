@@ -156,13 +156,13 @@ const App: React.FC = () => {
                    </div>
                 </div>
                 
-                {/* Floating Elements - Hidden on mobile to prevent overflow/clutter */}
-                <div className="hidden md:block absolute -right-12 top-20 bg-dark-card p-4 rounded-xl border border-neon-purple/30 shadow-2xl animate-float delay-1000 z-30">
+                {/* Floating Elements - Now visible on mobile with scaling */}
+                <div className="absolute -right-2 top-10 md:-right-12 md:top-20 scale-75 md:scale-100 bg-dark-card p-4 rounded-xl border border-neon-purple/30 shadow-2xl animate-float delay-1000 z-30">
                   <Zap className="w-8 h-8 text-neon-pink mx-auto mb-2" />
                   <div className="text-xs text-center font-bold text-white">Alta Performance</div>
                 </div>
                 
-                 <div className="hidden md:block absolute -left-8 bottom-32 bg-dark-card p-4 rounded-xl border border-neon-magenta/30 shadow-2xl animate-float z-30">
+                 <div className="absolute -left-2 bottom-20 md:-left-8 md:bottom-32 scale-75 md:scale-100 bg-dark-card p-4 rounded-xl border border-neon-magenta/30 shadow-2xl animate-float z-30">
                   <Cpu className="w-8 h-8 text-neon-purple mx-auto mb-2" />
                   <div className="text-xs text-center font-bold text-white">IA Integrada</div>
                 </div>
@@ -360,8 +360,8 @@ const App: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Mobile Floating - Hidden on mobile */}
-                <div className="absolute -bottom-12 -right-12 w-48 bg-black rounded-[2rem] border-[4px] border-[#333] shadow-2xl overflow-hidden animate-float delay-500 hidden lg:block">
+                {/* Mobile Floating - Now visible on mobile with scaling */}
+                <div className="absolute -bottom-6 -right-4 scale-[0.6] md:scale-100 origin-bottom-right md:-bottom-12 md:-right-12 w-48 bg-black rounded-[2rem] border-[4px] border-[#333] shadow-2xl overflow-hidden animate-float delay-500 z-20 block">
                     <div className="aspect-[9/18] relative">
                          <img 
                             src="https://i.imgur.com/hIUtV08.png" 
