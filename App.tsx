@@ -31,16 +31,16 @@ const App: React.FC = () => {
       <div className="fixed top-0 left-0 w-full bg-black/95 backdrop-blur-md border-b border-neon-pink/30 z-[60] py-2 overflow-hidden pointer-events-none h-8 flex items-center">
         <div className="whitespace-nowrap animate-marquee flex gap-8">
            <span className="text-neon-pink font-bold text-xs uppercase tracking-[0.2em] drop-shadow-[0_0_5px_rgba(196,58,117,0.8)]">
-             São apenas prévias do básico da estrutura que podemos entregar, todos os dados são personalizáveis •
+             Estrutura completa e personalizável para o seu negócio • Alta conversão e design premium •
            </span>
            <span className="text-neon-pink font-bold text-xs uppercase tracking-[0.2em] drop-shadow-[0_0_5px_rgba(196,58,117,0.8)]">
-             São apenas prévias do básico da estrutura que podemos entregar, todos os dados são personalizáveis •
+             Estrutura completa e personalizável para o seu negócio • Alta conversão e design premium •
            </span>
            <span className="text-neon-pink font-bold text-xs uppercase tracking-[0.2em] drop-shadow-[0_0_5px_rgba(196,58,117,0.8)]">
-             São apenas prévias do básico da estrutura que podemos entregar, todos os dados são personalizáveis •
+             Estrutura completa e personalizável para o seu negócio • Alta conversão e design premium •
            </span>
            <span className="text-neon-pink font-bold text-xs uppercase tracking-[0.2em] drop-shadow-[0_0_5px_rgba(196,58,117,0.8)]">
-             São apenas prévias do básico da estrutura que podemos entregar, todos os dados são personalizáveis •
+             Estrutura completa e personalizável para o seu negócio • Alta conversão e design premium •
            </span>
         </div>
       </div>
@@ -89,18 +89,17 @@ const App: React.FC = () => {
             
             <h1 className="text-4xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] md:leading-[0.9] tracking-tighter mb-6 md:mb-8">
               TRANSFORME <br/>
-              SUA <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-neon-purple animate-glow">PRESENÇA</span><br/>
-              DIGITAL EM VENDAS REAIS
+              SEU <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-neon-purple animate-glow">NEGÓCIO</span><br/>
+              COM INTELIGÊNCIA DIGITAL
             </h1>
             
             <p className="text-base md:text-xl text-gray-400 mb-8 md:mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0 border-l-0 lg:border-l-2 border-neon-magenta lg:pl-6 font-light">
-              Você solicitou a criação de uma BIO para Instagram, moderna e profissional.
-              Mas preparei também uma prévia completa do que sua marca pode se tornar, incluindo um Site Oficial totalmente personalizado e opções de expansão que elevam seu negócio a outro nível.
+              Não importa o seu segmento: Loja, Delivery, Serviços ou Infoprodutos. Entregamos a estrutura digital completa que sua marca precisa para vender mais, com design futurista e alta performance.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center lg:justify-start w-full sm:w-auto">
-              <Button variant="primary" href={LINKS.preview} external icon={ExternalLink} className="w-full sm:w-auto justify-center">
-                Ver prévia do seu site
+              <Button variant="primary" href="#plans" icon={ExternalLink} className="w-full sm:w-auto justify-center">
+                Ver Planos Disponíveis
               </Button>
               <Button variant="secondary" href={LINKS.whatsapp} external icon={MessageCircle} className="w-full sm:w-auto justify-center">
                 Falar com o Desenvolvedor
@@ -122,7 +121,7 @@ const App: React.FC = () => {
                        <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-yellow-500/50"></div>
                        <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-green-500/50"></div>
                      </div>
-                     <div className="text-[10px] text-gray-500 font-mono">DudsCloset_OS v2.0</div>
+                     <div className="text-[10px] text-gray-500 font-mono">System_OS v2.0</div>
                    </div>
                    
                    {/* Screen */}
@@ -146,11 +145,10 @@ const App: React.FC = () => {
                         </div>
                         <Button 
                           variant="primary" 
-                          href={LINKS.bio} 
-                          external 
+                          href="#preview"
                           className="!w-full !py-2 md:!py-3 !text-[10px] md:!text-xs !rounded-full shadow-[0_0_15px_rgba(196,58,117,0.6)] hover:shadow-[0_0_25px_rgba(196,58,117,0.8)] border border-white/20 font-bold tracking-widest relative z-10"
                         >
-                          ACESSAR PRÉVIA DA BIO
+                          VER DEMONSTRAÇÃO
                         </Button>
                       </div>
                    </div>
@@ -182,16 +180,16 @@ const App: React.FC = () => {
         <div className="grid md:grid-cols-2 border-y border-white/10">
           <div className="p-8 md:p-20 border-b md:border-b-0 md:border-r border-white/10 relative overflow-hidden group">
             <div className="absolute inset-0 bg-neon-pink/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-            <h3 className="text-neon-grey text-xs md:text-sm tracking-widest uppercase mb-4">O Pedido</h3>
+            <h3 className="text-neon-grey text-xs md:text-sm tracking-widest uppercase mb-4">O Desafio</h3>
             <p className="text-xl md:text-3xl font-light text-white leading-relaxed">
-              "Você solicitou a criação de uma <span className="text-neon-pink font-bold">BIO para Instagram</span>, moderna e profissional."
+              "Muitos negócios perdem oportunidades por não terem uma <span className="text-neon-pink font-bold">presença digital profissional</span> que transmita confiança."
             </p>
           </div>
           <div className="p-8 md:p-20 relative overflow-hidden group">
             <div className="absolute inset-0 bg-neon-purple/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-             <h3 className="text-neon-grey text-xs md:text-sm tracking-widest uppercase mb-4">A Entrega Acelera Mídia</h3>
+             <h3 className="text-neon-grey text-xs md:text-sm tracking-widest uppercase mb-4">A Solução Acelera Mídia</h3>
              <p className="text-xl md:text-3xl font-light text-white leading-relaxed">
-              "Mas preparei também uma <span className="text-neon-purple font-bold">prévia completa</span> do que sua marca pode se tornar."
+              "Criamos uma <span className="text-neon-purple font-bold">estrutura completa</span> para você escalar: Site, Bio e Automação integrados."
             </p>
           </div>
         </div>
@@ -285,10 +283,10 @@ const App: React.FC = () => {
               Comparativo <span className="text-neon-purple">Rápido</span> dos Planos
             </h2>
             <div className="text-gray-400 text-sm md:text-base space-y-2 mt-4 font-light">
-              <p><strong className="text-white">BIO</strong> — Presença digital básica e profissional</p>
-              <p><strong className="text-neon-pink">BIO + SITE</strong> — Estrutura completa e personalizada</p>
-              <p><strong className="text-white">Completo</strong> — Gestão inteligente + automação de estoque/financeiro</p>
-              <p><strong className="text-neon-purple">Automação Total</strong> — Atendimento, vendas e conteúdo 100% automatizados</p>
+              <p><strong className="text-white">BIO</strong> — Presença digital essencial</p>
+              <p><strong className="text-neon-pink">BIO + SITE</strong> — Estrutura completa para vender online</p>
+              <p><strong className="text-white">Gestão</strong> — Painel administrativo e controle total</p>
+              <p><strong className="text-neon-purple">Automação IA</strong> — Assistente inteligente no site 24h</p>
             </div>
           </div>
           
@@ -299,8 +297,8 @@ const App: React.FC = () => {
                   <th className="p-4 md:p-6 text-xs uppercase tracking-widest text-gray-500 font-bold border-b border-white/5 sticky left-0 bg-dark-card z-20">Recursos</th>
                   <th className="p-4 md:p-6 text-center text-xs uppercase tracking-widest text-gray-500 font-bold border-b border-white/5">Bio</th>
                   <th className="p-4 md:p-6 text-center text-xs uppercase tracking-widest text-neon-pink font-bold border-b border-white/5 bg-neon-pink/5">Bio + Site</th>
-                  <th className="p-4 md:p-6 text-center text-xs uppercase tracking-widest text-gray-500 font-bold border-b border-white/5">Pro</th>
-                  <th className="p-4 md:p-6 text-center text-xs uppercase tracking-widest text-neon-purple font-bold border-b border-white/5">Auto</th>
+                  <th className="p-4 md:p-6 text-center text-xs uppercase tracking-widest text-gray-500 font-bold border-b border-white/5">Gestão</th>
+                  <th className="p-4 md:p-6 text-center text-xs uppercase tracking-widest text-neon-purple font-bold border-b border-white/5">Auto IA</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5">
@@ -342,7 +340,7 @@ const App: React.FC = () => {
                         <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-red-500"></div>
                         <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-yellow-500"></div>
                         <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-green-500"></div>
-                        <div className="ml-4 bg-[#1a1a1a] px-3 py-1 rounded text-[8px] md:text-[10px] text-gray-500 flex-grow text-center font-mono truncate">dudscloset.com.br</div>
+                        <div className="ml-4 bg-[#1a1a1a] px-3 py-1 rounded text-[8px] md:text-[10px] text-gray-500 flex-grow text-center font-mono truncate">suamarca.com.br</div>
                     </div>
                     <div className="aspect-video bg-black relative overflow-hidden">
                         <img 
@@ -354,7 +352,7 @@ const App: React.FC = () => {
                         {/* Interactive Overlay */}
                         <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                              <Button variant="primary" href={LINKS.preview} external>
-                                Ver prévia do seu site
+                                Ver Demonstração
                              </Button>
                         </div>
                     </div>
@@ -377,11 +375,11 @@ const App: React.FC = () => {
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <h2 className="text-3xl md:text-6xl font-black text-white leading-none mb-6 md:mb-8">
               VEJA AGORA <br/>
-              <span className="text-neon-pink">A PRÉVIA</span> CRIADA PARA VOCÊ
+              <span className="text-neon-pink">A ESTRUTURA</span> QUE VAI MUDAR SEU JOGO
             </h2>
             <div className="space-y-4 md:space-y-6 text-base md:text-lg text-gray-400 font-light leading-relaxed">
               <p>
-                Acesse o ambiente de demonstração e veja o potencial da sua marca.
+                Acesse o ambiente de demonstração e imagine sua marca com esse nível de profissionalismo. Adaptação total para suas cores, fotos e produtos.
               </p>
             </div>
             
@@ -401,7 +399,7 @@ const App: React.FC = () => {
             </div>
              <div className="mt-8">
                  <Button variant="primary" href={LINKS.preview} external icon={ExternalLink}>
-                    Ver prévia do seu site
+                    Ver Demonstração
                   </Button>
              </div>
           </div>
@@ -419,7 +417,7 @@ const App: React.FC = () => {
               FALE COMIGO PARA <span className="text-neon-pink">ESCOLHER</span> SEU PLANO
             </h2>
             <p className="text-lg md:text-xl text-gray-400 mb-8 md:mb-12 font-light">
-              Sua marca merece uma presença digital profissional.
+              Sua marca merece uma presença digital profissional. Vamos começar?
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 w-full sm:w-auto">
