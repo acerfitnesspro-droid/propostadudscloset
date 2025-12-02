@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 import { Button } from './components/Button';
 import { Section } from './components/Section';
-import { PLANS, COMPARISON_DATA, LINKS } from './constants';
+import { PLANS, COMPARISON_DATA, LINKS, RECENT_PROJECTS } from './constants';
 
 const App: React.FC = () => {
   return (
@@ -31,16 +31,16 @@ const App: React.FC = () => {
       <div className="fixed top-0 left-0 w-full bg-black/95 backdrop-blur-md border-b border-neon-pink/30 z-[60] py-2 overflow-hidden pointer-events-none h-8 flex items-center">
         <div className="whitespace-nowrap animate-marquee flex gap-8">
            <span className="text-neon-pink font-bold text-xs uppercase tracking-[0.2em] drop-shadow-[0_0_5px_rgba(196,58,117,0.8)]">
-             Estrutura completa e personalizável para o seu negócio • Alta conversão e design premium •
+             Inovação Digital • Design Premium • Automação Inteligente • Resultados Reais •
            </span>
            <span className="text-neon-pink font-bold text-xs uppercase tracking-[0.2em] drop-shadow-[0_0_5px_rgba(196,58,117,0.8)]">
-             Estrutura completa e personalizável para o seu negócio • Alta conversão e design premium •
+             Inovação Digital • Design Premium • Automação Inteligente • Resultados Reais •
            </span>
            <span className="text-neon-pink font-bold text-xs uppercase tracking-[0.2em] drop-shadow-[0_0_5px_rgba(196,58,117,0.8)]">
-             Estrutura completa e personalizável para o seu negócio • Alta conversão e design premium •
+             Inovação Digital • Design Premium • Automação Inteligente • Resultados Reais •
            </span>
            <span className="text-neon-pink font-bold text-xs uppercase tracking-[0.2em] drop-shadow-[0_0_5px_rgba(196,58,117,0.8)]">
-             Estrutura completa e personalizável para o seu negócio • Alta conversão e design premium •
+             Inovação Digital • Design Premium • Automação Inteligente • Resultados Reais •
            </span>
         </div>
       </div>
@@ -57,9 +57,9 @@ const App: React.FC = () => {
               />
             </div>
             <div className="hidden md:flex space-x-10 items-center">
-              <a href="#plans" className="text-gray-400 hover:text-neon-pink text-sm uppercase tracking-widest font-bold transition-colors hover:drop-shadow-[0_0_8px_rgba(196,58,117,0.8)]">Planos</a>
-              <a href="#comparison" className="text-gray-400 hover:text-neon-pink text-sm uppercase tracking-widest font-bold transition-colors hover:drop-shadow-[0_0_8px_rgba(196,58,117,0.8)]">Comparativo</a>
-              <a href="#preview" className="text-gray-400 hover:text-neon-pink text-sm uppercase tracking-widest font-bold transition-colors hover:drop-shadow-[0_0_8px_rgba(196,58,117,0.8)]">Prévia</a>
+              <a href="#plans" className="text-gray-400 hover:text-neon-pink text-sm uppercase tracking-widest font-bold transition-colors hover:drop-shadow-[0_0_8px_rgba(196,58,117,0.8)]">Serviços</a>
+              <a href="#comparison" className="text-gray-400 hover:text-neon-pink text-sm uppercase tracking-widest font-bold transition-colors hover:drop-shadow-[0_0_8px_rgba(196,58,117,0.8)]">Diferenciais</a>
+              <a href="#preview" className="text-gray-400 hover:text-neon-pink text-sm uppercase tracking-widest font-bold transition-colors hover:drop-shadow-[0_0_8px_rgba(196,58,117,0.8)]">Tecnologia</a>
             </div>
             <div className="flex items-center gap-4">
               <Button variant="whatsapp" href={LINKS.whatsapp} external className="!px-4 !py-2 !text-[10px] md:!text-xs whitespace-nowrap">
@@ -88,21 +88,21 @@ const App: React.FC = () => {
             </div>
             
             <h1 className="text-4xl md:text-7xl lg:text-8xl font-black text-white leading-[1.1] md:leading-[0.9] tracking-tighter mb-6 md:mb-8">
-              TRANSFORME <br/>
-              SEU <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-neon-purple animate-glow">NEGÓCIO</span><br/>
-              COM INTELIGÊNCIA DIGITAL
+              DOMINE <br/>
+              SEU <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-neon-purple animate-glow">MERCADO</span><br/>
+              COM SITES INTELIGENTES
             </h1>
             
             <p className="text-base md:text-xl text-gray-400 mb-8 md:mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0 border-l-0 lg:border-l-2 border-neon-magenta lg:pl-6 font-light">
-              Não importa o seu segmento: Loja, Delivery, Serviços ou Infoprodutos. Entregamos a estrutura digital completa que sua marca precisa para vender mais, com design futurista e alta performance.
+              Do Site Profissional à Gestão com IA: entregamos a tecnologia definitiva para quem não aceita menos que a liderança. Design que impressiona, automação que vende.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center lg:justify-start w-full sm:w-auto">
               <Button variant="primary" href="#plans" icon={ExternalLink} className="w-full sm:w-auto justify-center">
-                Ver Planos Disponíveis
+                Ver Soluções
               </Button>
               <Button variant="secondary" href={LINKS.whatsapp} external icon={MessageCircle} className="w-full sm:w-auto justify-center">
-                Falar com o Desenvolvedor
+                Consultoria Grátis
               </Button>
             </div>
           </div>
@@ -127,42 +127,43 @@ const App: React.FC = () => {
                    {/* Screen */}
                    <div className="bg-black rounded-xl overflow-hidden aspect-[9/16] md:aspect-[4/5] relative group">
                       <img 
-                        src="https://i.imgur.com/hIUtV08.png" 
+                        src="https://i.imgur.com/ekgqJrk.png" 
                         alt="Interface" 
                         className="object-cover w-full h-full opacity-60 group-hover:opacity-100 transition-opacity duration-500 filter brightness-110 contrast-125 saturate-110" 
                       />
                       
-                      {/* UI Elements Overlay - Adjusted padding and gradient for button glow visibility */}
+                      {/* UI Elements Overlay */}
                       <div className="absolute inset-0 px-4 pb-6 pt-4 md:px-6 md:pb-8 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/50 to-transparent">
                         <div className="bg-white/10 backdrop-blur-md p-3 md:p-4 rounded-xl border border-white/10 mb-4 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                           <div className="flex justify-between items-center">
-                            <span className="text-xs md:text-sm text-gray-300">Vendas Hoje</span>
-                            <span className="text-neon-pink font-bold text-sm">+124%</span>
+                            <span className="text-xs md:text-sm text-gray-300">Vendas IA</span>
+                            <span className="text-neon-pink font-bold text-sm">+315%</span>
                           </div>
                           <div className="h-1 w-full bg-gray-700 mt-2 rounded-full overflow-hidden">
-                            <div className="h-full bg-neon-pink w-[70%]"></div>
+                            <div className="h-full bg-neon-pink w-[85%]"></div>
                           </div>
                         </div>
                         <Button 
                           variant="primary" 
-                          href="#preview"
+                          href="http://fenixuniformes.vercel.app/"
+                          external
                           className="!w-full !py-2 md:!py-3 !text-[10px] md:!text-xs !rounded-full shadow-[0_0_15px_rgba(196,58,117,0.6)] hover:shadow-[0_0_25px_rgba(196,58,117,0.8)] border border-white/20 font-bold tracking-widest relative z-10"
                         >
-                          VER DEMONSTRAÇÃO
+                          VER TECNOLOGIA
                         </Button>
                       </div>
                    </div>
                 </div>
                 
-                {/* Floating Elements - Now visible on mobile with scaling */}
+                {/* Floating Elements */}
                 <div className="absolute -right-2 top-10 md:-right-12 md:top-20 scale-75 md:scale-100 bg-dark-card p-4 rounded-xl border border-neon-purple/30 shadow-2xl animate-float delay-1000 z-30">
-                  <Zap className="w-8 h-8 text-neon-pink mx-auto mb-2" />
-                  <div className="text-xs text-center font-bold text-white">Alta Performance</div>
+                  <Cpu className="w-8 h-8 text-neon-pink mx-auto mb-2" />
+                  <div className="text-xs text-center font-bold text-white">IA Autônoma</div>
                 </div>
                 
                  <div className="absolute -left-2 bottom-20 md:-left-8 md:bottom-32 scale-75 md:scale-100 bg-dark-card p-4 rounded-xl border border-neon-magenta/30 shadow-2xl animate-float z-30">
-                  <Cpu className="w-8 h-8 text-neon-purple mx-auto mb-2" />
-                  <div className="text-xs text-center font-bold text-white">IA Integrada</div>
+                  <Zap className="w-8 h-8 text-neon-purple mx-auto mb-2" />
+                  <div className="text-xs text-center font-bold text-white">Alta Conversão</div>
                 </div>
              </div>
           </div>
@@ -175,21 +176,21 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Intro Section - Typography & Colors Presentation style */}
+      {/* Intro Section */}
       <Section className="!py-0">
         <div className="grid md:grid-cols-2 border-y border-white/10">
           <div className="p-8 md:p-20 border-b md:border-b-0 md:border-r border-white/10 relative overflow-hidden group">
             <div className="absolute inset-0 bg-neon-pink/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-            <h3 className="text-neon-grey text-xs md:text-sm tracking-widest uppercase mb-4">O Desafio</h3>
+            <h3 className="text-neon-grey text-xs md:text-sm tracking-widest uppercase mb-4">O Problema</h3>
             <p className="text-xl md:text-3xl font-light text-white leading-relaxed">
-              "Muitos negócios perdem oportunidades por não terem uma <span className="text-neon-pink font-bold">presença digital profissional</span> que transmita confiança."
+              "Negócios estagnados perdem clientes todos os dias por falta de <span className="text-neon-pink font-bold">profissionalismo digital</span> e lentidão no atendimento."
             </p>
           </div>
           <div className="p-8 md:p-20 relative overflow-hidden group">
             <div className="absolute inset-0 bg-neon-purple/5 translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
-             <h3 className="text-neon-grey text-xs md:text-sm tracking-widest uppercase mb-4">A Solução Acelera Mídia</h3>
+             <h3 className="text-neon-grey text-xs md:text-sm tracking-widest uppercase mb-4">A Revolução</h3>
              <p className="text-xl md:text-3xl font-light text-white leading-relaxed">
-              "Criamos uma <span className="text-neon-purple font-bold">estrutura completa</span> para você escalar: Site, Bio e Automação integrados."
+              "Unimos <span className="text-neon-purple font-bold">Design Premium</span> à <span className="text-neon-purple font-bold">Inteligência Artificial</span> para criar máquinas de vendas que funcionam sozinhas."
             </p>
           </div>
         </div>
@@ -198,14 +199,14 @@ const App: React.FC = () => {
       {/* Plans Section */}
       <Section id="plans">
         <div className="text-center mb-12 md:mb-20 relative px-4">
-          <span className="text-neon-pink font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Planos Estratégicos</span>
+          <span className="text-neon-pink font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Nossos Planos</span>
           <h2 className="text-3xl md:text-6xl font-black text-white uppercase tracking-tight">
-            Escolha seu <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-neon-purple">Upgrade</span>
+            Escolha sua <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-neon-purple">Estratégia</span>
           </h2>
           <div className="w-16 md:w-24 h-1 bg-neon-magenta mx-auto mt-6 rounded-full shadow-[0_0_10px_#C43A75]"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 px-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-2 max-w-5xl mx-auto">
           {PLANS.map((plan) => {
             const Icon = plan.icon;
             return (
@@ -224,30 +225,30 @@ const App: React.FC = () => {
                   <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-neon-pink via-white to-neon-pink shadow-[0_0_20px_#C43A75]"></div>
                 )}
                 
-                <div className="p-6 md:p-8 flex-grow relative z-10">
-                  <div className={`w-12 h-12 md:w-14 md:h-14 rounded-lg flex items-center justify-center mb-6 md:mb-8 border ${
+                <div className="p-8 md:p-10 flex-grow relative z-10">
+                  <div className={`w-14 h-14 md:w-16 md:h-16 rounded-lg flex items-center justify-center mb-8 border ${
                     plan.highlight ? 'bg-neon-pink/20 border-neon-pink text-neon-pink shadow-[0_0_15px_rgba(196,58,117,0.4)]' : 'bg-white/5 border-white/10 text-gray-400 group-hover:text-neon-purple group-hover:border-neon-purple'
                   } transition-all duration-300`}>
-                    <Icon className="w-6 h-6 md:w-7 md:h-7" />
+                    <Icon className="w-7 h-7 md:w-8 md:h-8" />
                   </div>
                   
-                  <h3 className="text-lg md:text-xl font-bold text-white uppercase tracking-wider mb-2">{plan.title}</h3>
-                  <div className="mb-6 md:mb-8">
-                    <span className="text-2xl md:text-3xl font-black text-white">{plan.price}</span>
-                    {plan.subtitle && <span className="block text-xs text-neon-grey font-mono mt-1">{plan.subtitle}</span>}
+                  <h3 className="text-xl md:text-2xl font-bold text-white uppercase tracking-wider mb-2">{plan.title}</h3>
+                  <div className="mb-8">
+                    <span className="text-3xl md:text-4xl font-black text-white">{plan.price}</span>
+                    {plan.subtitle && <span className="block text-sm text-neon-grey font-mono mt-2">{plan.subtitle}</span>}
                   </div>
                   
                   <ul className="space-y-4 mb-8">
                     {plan.description.map((item, idx) => (
-                      <li key={idx} className="flex items-start text-sm text-gray-400 group-hover:text-gray-300 transition-colors">
-                        <Check className="w-4 h-4 md:w-5 md:h-5 text-neon-pink mr-3 flex-shrink-0 drop-shadow-[0_0_5px_rgba(196,58,117,0.8)]" />
+                      <li key={idx} className="flex items-start text-base text-gray-400 group-hover:text-gray-300 transition-colors">
+                        <Check className="w-5 h-5 text-neon-pink mr-3 flex-shrink-0 drop-shadow-[0_0_5px_rgba(196,58,117,0.8)]" />
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="p-6 md:p-8 pt-0 mt-auto relative z-10 space-y-3">
+                <div className="p-8 md:p-10 pt-0 mt-auto relative z-10 space-y-4">
                   <Button 
                     variant={plan.highlight ? 'primary' : 'outline'} 
                     fullWidth 
@@ -275,18 +276,15 @@ const App: React.FC = () => {
 
       {/* Comparison Table */}
       <Section id="comparison">
-        <div className="bg-dark-card rounded-3xl border border-white/5 overflow-hidden relative">
+        <div className="bg-dark-card rounded-3xl border border-white/5 overflow-hidden relative max-w-5xl mx-auto">
           <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-neon-pink to-transparent opacity-50"></div>
           
           <div className="p-8 md:p-12 border-b border-white/5">
             <h2 className="text-2xl md:text-4xl font-black text-white uppercase tracking-tight mb-2">
-              Comparativo <span className="text-neon-purple">Rápido</span> dos Planos
+              Comparativo <span className="text-neon-purple">Detalhado</span>
             </h2>
             <div className="text-gray-400 text-sm md:text-base space-y-2 mt-4 font-light">
-              <p><strong className="text-white">BIO</strong> — Presença digital essencial</p>
-              <p><strong className="text-neon-pink">BIO + SITE</strong> — Estrutura completa para vender online</p>
-              <p><strong className="text-white">Gestão</strong> — Painel administrativo e controle total</p>
-              <p><strong className="text-neon-purple">Automação IA</strong> — Assistente inteligente no site 24h</p>
+              <p>Entenda a diferença entre ter um <strong className="text-white">Site Profissional</strong> e uma <strong className="text-neon-pink">Máquina de Vendas Automática</strong>.</p>
             </div>
           </div>
           
@@ -294,11 +292,9 @@ const App: React.FC = () => {
             <table className="w-full text-left border-collapse min-w-[600px]">
               <thead>
                 <tr>
-                  <th className="p-4 md:p-6 text-xs uppercase tracking-widest text-gray-500 font-bold border-b border-white/5 sticky left-0 bg-dark-card z-20">Recursos</th>
-                  <th className="p-4 md:p-6 text-center text-xs uppercase tracking-widest text-gray-500 font-bold border-b border-white/5">Bio</th>
-                  <th className="p-4 md:p-6 text-center text-xs uppercase tracking-widest text-neon-pink font-bold border-b border-white/5 bg-neon-pink/5">Bio + Site</th>
-                  <th className="p-4 md:p-6 text-center text-xs uppercase tracking-widest text-gray-500 font-bold border-b border-white/5">Gestão</th>
-                  <th className="p-4 md:p-6 text-center text-xs uppercase tracking-widest text-neon-purple font-bold border-b border-white/5">Auto IA</th>
+                  <th className="p-4 md:p-6 text-xs uppercase tracking-widest text-gray-500 font-bold border-b border-white/5 sticky left-0 bg-dark-card z-20 w-1/2">Funcionalidades</th>
+                  <th className="p-4 md:p-6 text-center text-xs uppercase tracking-widest text-white font-bold border-b border-white/5 w-1/4">Site Profissional</th>
+                  <th className="p-4 md:p-6 text-center text-xs uppercase tracking-widest text-neon-pink font-bold border-b border-white/5 bg-neon-pink/5 w-1/4">Automação IA</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5">
@@ -306,16 +302,10 @@ const App: React.FC = () => {
                   <tr key={idx} className="hover:bg-white/[0.02] transition-colors">
                     <td className="p-4 md:p-6 text-xs md:text-sm font-medium text-gray-300 sticky left-0 bg-dark-card z-20 border-r border-white/5 md:border-r-0">{row.feature}</td>
                     <td className="p-4 md:p-6 text-center">
-                      {row.bio ? <div className="w-2 h-2 bg-neon-pink rounded-full mx-auto shadow-[0_0_8px_#C43A75]"></div> : <div className="w-1 h-1 bg-gray-800 rounded-full mx-auto"></div>}
+                      {row.site ? <div className="w-2 h-2 bg-white rounded-full mx-auto"></div> : <div className="w-1 h-1 bg-gray-800 rounded-full mx-auto"></div>}
                     </td>
                     <td className="p-4 md:p-6 text-center bg-neon-pink/[0.02]">
-                      {row.site ? <div className="w-2 h-2 bg-neon-pink rounded-full mx-auto shadow-[0_0_8px_#C43A75]"></div> : <div className="w-1 h-1 bg-gray-800 rounded-full mx-auto"></div>}
-                    </td>
-                    <td className="p-4 md:p-6 text-center">
-                      {row.admin ? <div className="w-2 h-2 bg-neon-pink rounded-full mx-auto shadow-[0_0_8px_#C43A75]"></div> : <div className="w-1 h-1 bg-gray-800 rounded-full mx-auto"></div>}
-                    </td>
-                    <td className="p-4 md:p-6 text-center">
-                      {row.automation ? <div className="w-3 h-3 bg-neon-purple rotate-45 mx-auto shadow-[0_0_10px_#A45C8A]"></div> : <div className="w-1 h-1 bg-gray-800 rounded-full mx-auto"></div>}
+                      {row.automation ? <div className="w-3 h-3 bg-neon-pink rotate-45 mx-auto shadow-[0_0_10px_#C43A75]"></div> : <div className="w-1 h-1 bg-gray-800 rounded-full mx-auto"></div>}
                     </td>
                   </tr>
                 ))}
@@ -358,7 +348,7 @@ const App: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Mobile Floating - Now visible on mobile with scaling */}
+                {/* Mobile Floating */}
                 <div className="absolute -bottom-6 -right-4 scale-[0.6] md:scale-100 origin-bottom-right md:-bottom-12 md:-right-12 w-48 bg-black rounded-[2rem] border-[4px] border-[#333] shadow-2xl overflow-hidden animate-float delay-500 z-20 block">
                     <div className="aspect-[9/18] relative">
                          <img 
@@ -374,35 +364,58 @@ const App: React.FC = () => {
           
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <h2 className="text-3xl md:text-6xl font-black text-white leading-none mb-6 md:mb-8">
-              VEJA AGORA <br/>
-              <span className="text-neon-pink">A ESTRUTURA</span> QUE VAI MUDAR SEU JOGO
+              VEJA O FUTURO <br/>
+              <span className="text-neon-pink">DA SUA MARCA</span> ACONTECENDO
             </h2>
             <div className="space-y-4 md:space-y-6 text-base md:text-lg text-gray-400 font-light leading-relaxed">
               <p>
-                Acesse o ambiente de demonstração e imagine sua marca com esse nível de profissionalismo. Adaptação total para suas cores, fotos e produtos.
+                Não é apenas um site. É um ecossistema digital completo onde o Design atrai e a Inteligência Artificial converte. Visualize seu negócio operando em outro nível.
               </p>
             </div>
             
             <div className="mt-8 md:mt-10 flex flex-wrap gap-4 justify-center lg:justify-start">
                <div className="px-4 py-2 bg-white/5 border border-white/10 rounded text-xs md:text-sm text-gray-300 flex items-center gap-2">
                  <Layers className="w-4 h-4 text-neon-purple" />
-                 Design Responsivo
+                 Painel Intuitivo
                </div>
                <div className="px-4 py-2 bg-white/5 border border-white/10 rounded text-xs md:text-sm text-gray-300 flex items-center gap-2">
-                 <Zap className="w-4 h-4 text-neon-pink" />
-                 Carregamento Rápido
+                 <Cpu className="w-4 h-4 text-neon-pink" />
+                 IA Treinada
                </div>
                <div className="px-4 py-2 bg-white/5 border border-white/10 rounded text-xs md:text-sm text-gray-300 flex items-center gap-2">
                  <TrendingUp className="w-4 h-4 text-green-400" />
-                 Foco em Conversão
+                 Escala Automática
                </div>
             </div>
              <div className="mt-8">
                  <Button variant="primary" href={LINKS.preview} external icon={ExternalLink}>
-                    Ver Demonstração
+                    Acessar Demonstração
                   </Button>
              </div>
           </div>
+        </div>
+
+        {/* New Projects Section */}
+        <div className="mt-24 pt-16 border-t border-white/5 relative z-10">
+            <p className="text-center text-neon-pink font-bold tracking-widest text-xs uppercase mb-4">Portfólio</p>
+            <h3 className="text-2xl md:text-4xl font-black text-center text-white mb-10">
+              PROJETOS <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-pink to-neon-purple">RECENTES</span>
+            </h3>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+              {RECENT_PROJECTS.map((project, idx) => (
+                <Button 
+                  key={idx}
+                  variant="secondary"
+                  href={project.url}
+                  external
+                  icon={ExternalLink}
+                  className="!py-4 !px-6 !text-xs md:!text-sm justify-between w-full group hover:!border-neon-pink/50 transition-all duration-300"
+                >
+                  <span className="truncate mr-2">{project.name}</span>
+                </Button>
+              ))}
+            </div>
         </div>
       </Section>
 
@@ -414,18 +427,18 @@ const App: React.FC = () => {
          
          <div className="relative z-10 max-w-4xl">
             <h2 className="text-4xl md:text-7xl font-black text-white mb-6 md:mb-8 tracking-tighter">
-              FALE COMIGO PARA <span className="text-neon-pink">ESCOLHER</span> SEU PLANO
+              PRONTO PARA <span className="text-neon-pink">ESCALAR</span> SEU NEGÓCIO?
             </h2>
             <p className="text-lg md:text-xl text-gray-400 mb-8 md:mb-12 font-light">
-              Sua marca merece uma presença digital profissional. Vamos começar?
+              A tecnologia que grandes empresas usam, agora ao seu alcance. Vamos iniciar sua transformação digital hoje.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 w-full sm:w-auto">
                <Button variant="primary" href="#plans" className="!py-4 md:!py-5 !px-8 md:!px-12 !text-base md:!text-lg shadow-[0_0_30px_rgba(196,58,117,0.4)] hover:shadow-[0_0_50px_rgba(196,58,117,0.6)] w-full sm:w-auto justify-center">
-                 Escolher meu plano
+                 Quero meu plano
                </Button>
                <Button variant="outline" href={LINKS.whatsapp} external className="!py-4 md:!py-5 !px-8 md:!px-12 !text-base md:!text-lg !border-gray-600 !text-gray-300 hover:!border-neon-pink hover:!text-white w-full sm:w-auto justify-center">
-                 Falar no WhatsApp
+                 Falar com Especialista
                </Button>
             </div>
          </div>
@@ -444,14 +457,14 @@ const App: React.FC = () => {
                 className="h-8 w-auto mb-4 mx-auto md:mx-0 filter brightness-0 invert opacity-80"
               />
             <p className="text-gray-600 text-sm">
-              &copy; {new Date().getFullYear()} Acelera Mídia. Todos os direitos reservados.
+              &copy; {new Date().getFullYear()} Acelera Mídia. Soluções Digitais e IA.
             </p>
           </div>
           
           <div className="flex gap-8">
             <a href="#" className="text-gray-600 hover:text-neon-pink transition-colors"><Smartphone className="w-5 h-5"/></a>
             <a href="#" className="text-gray-600 hover:text-neon-pink transition-colors"><Globe className="w-5 h-5"/></a>
-            <a href="#" className="text-gray-600 hover:text-neon-pink transition-colors"><Bot className="w-5 h-5"/></a>
+            <a href="#" className="text-gray-600 hover:text-neon-pink transition-colors"><Cpu className="w-5 h-5"/></a>
           </div>
         </div>
       </footer>

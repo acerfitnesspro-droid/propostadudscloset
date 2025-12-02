@@ -19,8 +19,6 @@ export interface Plan {
 
 export interface ComparisonRow {
   feature: string;
-  bio: boolean;
   site: boolean;
-  admin: boolean;
   automation: boolean;
 }

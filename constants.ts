@@ -2,87 +2,74 @@ import {
   Smartphone, 
   Globe, 
   LayoutDashboard, 
-  Bot
+  Bot,
+  Cpu,
+  Zap
 } from 'lucide-react';
 import { Plan, ComparisonRow } from './types';
 
 export const LINKS = {
   whatsapp: "https://wa.me/77988400518",
-  preview: "#preview", // Generic placeholder
-  bio: "#plans", // Generic placeholder
+  preview: "#preview", 
+  bio: "#plans",
   logo: "https://i.imgur.com/svwpQgO.png"
 };
 
+export const RECENT_PROJECTS = [
+  { name: "Sistema Brotos da Terra", url: "https://appsystembrotos.vercel.app/" },
+  { name: "Sistema Lanchonete 3 irmãos", url: "https://lanchonete-3-irm-os-liard.vercel.app/" },
+  { name: "Site Heein Fragrâncias", url: "https://heeinfragrancias.vercel.app/" },
+  { name: "Clinica Revitalize", url: "https://revitalizeclinicaleo.vercel.app/" },
+];
+
 export const PLANS: Plan[] = [
   {
-    id: 'bio',
-    title: 'BIO Profissional',
-    price: 'R$ 197,00',
-    description: [
-      'Página leve, moderna e objetiva',
-      'Visual alinhado com a identidade da marca',
-      'Botões para seus principais canais de atendimento',
-      'Design estratégico para alta conversão'
-    ],
-    cta: 'Quero minha BIO',
-    secondaryCta: 'Falar no WhatsApp',
-    icon: Smartphone
-  },
-  {
     id: 'site',
-    title: 'Site Profissional + BIO',
-    price: 'R$ 449,00',
+    title: 'Site Profissional',
+    price: 'R$ 499,00',
+    subtitle: 'Pagamento único',
     description: [
-      'Site Institucional ou Loja personalizado para seu nicho',
-      'Design exclusivo e profissional',
-      'Integração com meios de pagamento',
-      'Área para vitrine de produtos ou serviços'
+      'Site Institucional ou Loja Personalizada',
+      'Design Exclusivo e Responsivo',
+      'Vitrine de Produtos e Serviços',
+      'Integração com Meios de Pagamento',
+      'Integração Direta com WhatsApp',
+      'Otimização SEO Básica'
     ],
     cta: 'Quero meu Site',
-    secondaryCta: 'Tirar dúvidas',
-    highlight: true,
+    secondaryCta: 'Tirar Dúvidas',
+    highlight: false,
     icon: Globe
   },
   {
-    id: 'admin',
-    title: 'Site + Painel de Gestão',
-    price: 'R$ 749,00',
-    description: [
-      'Painel Administrativo completo para gestão',
-      'Controle de produtos, serviços e conteúdo',
-      'Relatórios de visualização e cliques',
-      'Autonomia total para atualizar seu negócio'
-    ],
-    cta: 'Quero o Pacote Gestão',
-    secondaryCta: 'Falar com Especialista',
-    icon: LayoutDashboard
-  },
-  {
     id: 'automation',
-    title: 'Automação com IA no Site',
-    price: 'R$ 1.000',
-    subtitle: '+ R$ 349/mês',
+    title: 'Automação com IA',
+    price: 'R$ 749,00',
+    subtitle: '+ R$ 179/mês (Manutenção e IA)',
     description: [
-      'Assistente Virtual Inteligente integrado diretamente ao site',
-      'Treinado com as informações do seu negócio',
-      'Atende e tira dúvidas dos clientes 24h por dia',
-      'Sem vínculo obrigatório com WhatsApp - funciona no seu domínio',
-      'Captura leads e qualifica vendas automaticamente'
+      'Tudo do plano Site Profissional',
+      'Assistente Virtual Inteligente 24h',
+      'Painel Administrativo Completo',
+      'Gestão de Estoque e Ordens de Serviço',
+      'Sistema de Afiliados e Perfis de Cargo',
+      'Treinamento da IA com seus dados'
     ],
-    cta: 'Quero Automação IA',
+    cta: 'Quero Automação Total',
     secondaryCta: 'Saber mais',
-    icon: Bot
+    highlight: true,
+    icon: Cpu
   }
 ];
 
 export const COMPARISON_DATA: ComparisonRow[] = [
-  { feature: 'Link na Bio Personalizado', bio: true, site: true, admin: true, automation: true },
-  { feature: 'Design Premium Exclusivo', bio: true, site: true, admin: true, automation: true },
-  { feature: 'Site Completo (Landing/Loja)', bio: false, site: true, admin: true, automation: true },
-  { feature: 'Integração de Pagamentos', bio: false, site: true, admin: true, automation: true },
-  { feature: 'Painel Administrativo', bio: false, site: false, admin: true, automation: true },
-  { feature: 'Gestão de Conteúdo', bio: false, site: false, admin: true, automation: true },
-  { feature: 'Assistente Virtual Inteligente', bio: false, site: false, admin: false, automation: true },
-  { feature: 'Atendimento Automático no Site', bio: false, site: false, admin: false, automation: true },
-  { feature: 'Treinamento de IA Personalizado', bio: false, site: false, admin: false, automation: true },
+  { feature: 'Design Premium Exclusivo', site: true, automation: true },
+  { feature: 'Site Institucional ou Loja', site: true, automation: true },
+  { feature: 'Integração de Pagamentos', site: true, automation: true },
+  { feature: 'Integração WhatsApp', site: true, automation: true },
+  { feature: 'Assistente Virtual Inteligente', site: false, automation: true },
+  { feature: 'Atendimento 24h por IA', site: false, automation: true },
+  { feature: 'Painel de Gestão Completo', site: false, automation: true },
+  { feature: 'Controle de Estoque e O.S.', site: false, automation: true },
+  { feature: 'Sistema de Afiliados', site: false, automation: true },
+  { feature: 'Gestão de Equipe (Cargos)', site: false, automation: true },
 ];
