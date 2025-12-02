@@ -334,7 +334,7 @@ const App: React.FC = () => {
                     </div>
                     <div className="aspect-video bg-black relative overflow-hidden">
                         <img 
-                            src="https://i.imgur.com/yBHpLA6.png" 
+                            src="https://i.imgur.com/GDrdUDN.png" 
                             alt="Web Preview" 
                             className="object-cover w-full h-full opacity-80 group-hover:scale-105 transition-transform duration-700 filter brightness-110 contrast-125 saturate-110" 
                         />
@@ -352,7 +352,7 @@ const App: React.FC = () => {
                 <div className="absolute -bottom-6 -right-4 scale-[0.6] md:scale-100 origin-bottom-right md:-bottom-12 md:-right-12 w-48 bg-black rounded-[2rem] border-[4px] border-[#333] shadow-2xl overflow-hidden animate-float delay-500 z-20 block">
                     <div className="aspect-[9/18] relative">
                          <img 
-                            src="https://i.imgur.com/hIUtV08.png" 
+                            src="https://i.imgur.com/ekgqJrk.png" 
                             alt="Mobile" 
                             className="object-cover w-full h-full filter brightness-110 contrast-125 saturate-110" 
                          />
